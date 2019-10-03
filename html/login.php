@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./forum.css">
-    <title>Stränghantering</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
     <?php require '../templates/header.php'; ?>
 
-    <h1>Formulär</h1>
 
-   <form action="welcome.php" method = "post">
-   Namn: <input type = "text" name="name">
-   <p>Lösenord: <input type = "password" name="e-mail"><br /></p>
-   <input type = "submit">
+    <form action="welcome.php" method = "post" class="w3-container">
+        <h2>Logga in</h2>
+        <label for="name" class="w3-text-purple">Namn:</label>
+        <input type = "text" name="name" class="w3-input w3-border w3-light-grey">
+        <label for="password" class="w3-text-purple">Lösenord:</label> 
+        <input type = "password" name="password" class="w3-input w3-border w3-light-grey">
+        <input type = "submit" class="w3-button w3-purple">
 
-   </form>
+    </form>
 
-   <?php require '../templates/footer.php'; ?>
+    <?php require '../templates/footer.php'; ?>
 
 </body>
 </html>
