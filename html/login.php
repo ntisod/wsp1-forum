@@ -11,8 +11,7 @@
 
     <?php require '../templates/header.php'; ?>
 
-
-    <form action="welcome.php" method = "post" class="w3-container">
+    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method = "post" class="w3-container">
         <h2>Logga in</h2>
         <label for="name" class="w3-text-purple">Namn:</label>
         <input type = "text" name="name" class="w3-input w3-border w3-light-grey">
